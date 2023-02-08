@@ -1,0 +1,6 @@
+projectKey=conventional-bull
+serverUrl=http://localhost:8084
+serverVersion=8.7.1.42226
+dashboardUrl=http://localhost:8084/dashboard?id=conventional-bull
+ceTaskId=AYWwb5ujFqbw4u7dfQMb
+ceTaskUrl=http://localhost:8084/api/ce/task?id=AYWwb5ujFqbw4u7dfQMb
