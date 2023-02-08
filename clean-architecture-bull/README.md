@@ -1,13 +1,13 @@
-# app-sem-ddd
+# Configuração de ambiente
 
-Aplicação sem DDD do projeto [GoBarber](https://github.com/lhleonardo/gobarber-api).
+```
+# Instala as dependências
+npm i
 
-Criado para o artigo de Estudos Avançados em Engenharia de Software.
+# Levanta o servidor
+npm run dev
+```
 
-# Anotações
+# Comando para obter métricas através do sonar
 
 sonar-scanner -Dproject.settings=./sonar-scanner.properties
-
-# Autor
-
-Leonardo Braz ([@lhleonardo](https://github.com/lhleonardo))
