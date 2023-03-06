@@ -1,9 +1,7 @@
-import UuidProvider from '@providers/uuid/uuid-provider';
-
 import AppError from '@shared/errors/app-error';
 import { Entity } from './entity';
 
-export type AppointmentProps = {
+type AppointmentProps = {
   providerId: string;
   userId: string;
   date: Date;
@@ -40,12 +38,7 @@ export class AppointmentEntity extends Entity<AppointmentProps> {
     props: AppointmentProps,
     id?: string,
   ): AppointmentEntity {
-    if (props.providerId == null) {
-      throw new AppError('providerId field is mandatory');
-    }
-    if (!UuidProvider.isUuid(props.providerId)) {
-      throw new AppError('providerId field value must be of type uuid');
-    }
+    if (props.providerId == null) throw new AppError('providerId field is mandatory');
     if (!props.userId) throw new AppError('userId field is mandatory');
     if (!props.date) throw new AppError('date field is mandatory');
     if (!props.createdAt) throw new AppError('createdAt field is mandatory');
